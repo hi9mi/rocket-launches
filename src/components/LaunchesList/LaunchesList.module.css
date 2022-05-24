@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 100px);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 500;
+  color: grey;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.list {
+  flex: 1;
+  list-style-type: none;
+  border: 2px solid #000;
+  border-radius: 7px;
+  padding: 15px 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.isOver {
+  background-color: #f5f5f5;
+}

@@ -1,0 +1,18 @@
+.launch {
+  height: 150px;
+  min-width: 200px;
+  padding: 25px 15px;
+  border: 2px solid #000;
+  border-radius: 7px;
+  background-color: #fff;
+  transition: transform 0.2s ease-in-out;
+}
+
+.launch__name {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.dragging {
+  transform: scale(0.95);
+}

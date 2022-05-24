@@ -1,0 +1,20 @@
+.wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  width: 100px;
+}
+
+.button:hover {
+  background-color: #f5f5f5;
+}

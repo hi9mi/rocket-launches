@@ -1,0 +1,9 @@
+const SPACEX_LAUNCHES_BASE_URL = 'https://api.spacexdata.com/v3/launches';
+const PAST_LAUNCHES_QUERY = `${SPACEX_LAUNCHES_BASE_URL}/past?limit=5`;
+const UPCOMING_LAUNCHES_QUERY = `${SPACEX_LAUNCHES_BASE_URL}/upcoming?limit=5`;
+
+export {
+  PAST_LAUNCHES_QUERY,
+  UPCOMING_LAUNCHES_QUERY,
+  SPACEX_LAUNCHES_BASE_URL,
+};
