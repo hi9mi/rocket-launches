@@ -18,3 +18,5 @@ yarn start
 ## build project
 yarn build
 ```
+
+### Deployed version on [Heroku](https://hi9mi-rocket-launches.herokuapp.com/)
