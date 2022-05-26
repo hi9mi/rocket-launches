@@ -23,10 +23,11 @@ const CSSLoader = {
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.tsx',
+  entry: path.resolve(__dirname, 'src', 'index.tsx'),
   output: {
-    path: path.join(__dirname, '/dist'),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    publicPath: '/',
   },
   devServer: {
     static: './dist',
@@ -34,12 +35,12 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.(js|jsx|tsx|ts)$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
       },
       {
-        test: /\.tsx?$/,
+        test: /\.(tsx|ts)?$/,
         use: 'ts-loader',
         exclude: /node_modules/,
       },
@@ -55,11 +56,11 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js'],
+    extensions: ['*', '.js', '.jsx', '.tsx', '.ts'],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './index.html',
+      template: path.resolve(__dirname, 'public', 'index.html'),
     }),
   ],
 };
